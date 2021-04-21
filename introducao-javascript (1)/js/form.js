@@ -15,8 +15,9 @@ botaoAdd.addEventListener("click", function(Event){
 
 
     if(erros.length > 0){
+        exibeMensagensDeErro(erros)
         var mensagemErro = document.querySelector("#mensagem-erro");
-        mensagemErro.textContent = erros;
+
     }
 
     // Adicionando o paciente na tabela
@@ -27,6 +28,15 @@ botaoAdd.addEventListener("click", function(Event){
     form.reset();
 
 })
+
+function exibeMensagensDeErro(erros){
+    var ul = document.querySelector("#mensagens-erro");
+    erros.forEach(function(erro){
+        var li = document.createElement("li");
+        li.textContent = erro;
+        ul.appendChild(li);
+    });
+}
 
 function obtemPacienteDoForm(form){
 

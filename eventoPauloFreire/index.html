@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<title>Paulo Freire: ainda hoje</title>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<html>
+    <head>
+        <title class="titulo">
+            Paulo Freire: ainda hoje
+        </title>
+        <img class="cabecalho" src="https://lh4.googleusercontent.com/UbJ1UwM4-CshrYK8ni7HEoMECCIhn94g7TwN6YWbOKUJ2BnrOO1IEBUuZEOb1QhpbOGilZln3BjsrJD_vL3LAm4=w16383"
+
+    </head>
+
+    <body>
+        <section class="container">
+            <h2 id="titulo-form">Novo participante</h2>
+            <ul id="mensagens-erro">
+                
+            </ul>
+            <form id="form-adiciona">
+                <div class="grupo">
+                    <label for="nome">Nome Completo:</label>
+                    <input id="nome" name="nome" type="text" placeholder="Nome Completo" class="campo" value="">
+                </div>
+                <div class="grupo">
+                    <p>Selecione sua categoria:</p>
+                    <label for="tipo">PIBID</label>
+                    <input type="radio" id="tipo-aluno" name="categoria" value="pibid"><br>
+                    
+                    <label for="tipo">RP</label>
+                    <input type="radio" id="tipo-aluno" name="tipo-aluno" value="rp"><br>
+
+                <div class="grupo">
+                    <p>Selecione seu <strong>curso</strong></p>
+
+                    <label for="artes-visuais">Artes Visuais</label>
+                    <input type="radio" id="tipo-curso" name="curso" value="artes-visuais"><br>
+
+                    <label for="biologia">Biologia</label>
+                    <input type="radio" id="tipo-curso" name="curso" value="biologia"><br>
+
+                    <label for="danca">Dança</label>
+                    <input type="radio" id="tipo-curso" name="curso" value="danca"><br>
+
+                    <label for="educacao fisica">Educação Física</label>
+                    <input type="radio" id="tipo-curso" name="curso" value="educacao fisica"><br>
+
+                    <label for="geografia">Geografia</label>
+                    <input type="radio" id="tipo-curso" name="curso" value="geografia"><br>
+
+                    <label for="historia">História</label>
+                    <input type="radio" id="tipo-curso" name="curso" value="historia"><br>
+
+                    <label for="ingles">Inglês</label>
+                    <input type="radio" id="tipo-curso" name="curso" value="ingles"><br>
+
+                    <label for="matematica">Matemática</label>
+                    <input type="radio" id="tipo-curso" name="curso" value="matematica"><br>
+
+                    <label for="musica">Música</label>
+                    <input type="radio" id="tipo-curso" name="curso" value="musica"><br>
+
+                    <label for="pedagogia">Pedagogia</label>
+                    <input type="radio" id="tipo-curso" name="curso" value="pedagogia"><br>
+
+                    <label for="portugues">Português</label>
+                    <input type="radio" id="tipo-curso" name="curso" value="portugues"><br>
+
+                    <label for="teatro">Teatro</label>
+                    <input type="radio" id="tipo-curso" name="curso" value="teatro"><br>              
+                </div>
+                <br>
+                <button id="adicionar-participante" class="botao-principal" onclick="">Adicionar</button>
+            </form>
+        </section>
+
+        <h1>Participantes</h1>
+
+        <table style="width:100%">
+                        <!----><thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Categoria</th>
+                                <th>Curso</th>
+                                <th>Capítulo</th>
+                                <th>Sala</th>
+                            </tr>
+                        </thead>
+            <tbody id="tabelaParticipantes">
+
+            </tbody>
+        </table>
+        <script src="adicionaParticipante.js"></script>
+        <!--<script src="listaParticipantes.js"></script>-->
+    </body>
+
+</html>
